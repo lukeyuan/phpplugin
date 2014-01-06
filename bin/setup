@@ -22,6 +22,6 @@ else
   echo "Skipping version creation marker."
 fi
 
-cp -r $OPENSHIFT_PLUGIN_DIR/template $OPENSHIFT_REPO_DIR
+cp -r $OPENSHIFT_PLUGIN_DIR/php $OPENSHIFT_REPO_DIR
 
 exit 0
