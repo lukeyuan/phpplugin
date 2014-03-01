@@ -23,6 +23,9 @@ else
 fi
 
 cp -r $OPENSHIFT_PLUGIN_DIR/php $OPENSHIFT_REPO_DIR
-wget $DOWNLOAD_PATH -P $OPENSHIFT_REPO_DIR/php
+
+if [[ -n "$DOWNLOAD_PATH" ]]; then
+  wget $DOWNLOAD_PATH -P $OPENSHIFT_REPO_DIR/php
+fi
 
 exit 0
