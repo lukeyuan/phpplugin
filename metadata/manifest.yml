@@ -5,6 +5,8 @@ Display-Name: My test php plugin
 Description: A plugin cartridge for test.
 Source-Url: https://github.com/lukeyuan/phpplugin.git
 Version: '0.1'
+Versions:
+ - '0.1'
 License: "None"
 Vendor: scnu
 Cartridge-Version: 0.0.1
