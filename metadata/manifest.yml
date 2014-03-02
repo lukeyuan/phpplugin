@@ -16,6 +16,7 @@ Categories:
 Group-Overrides:
  - components:
    - web_framework
+   - phpplugin-0.1
 Scaling:
   Min: 1
   Max: 1
