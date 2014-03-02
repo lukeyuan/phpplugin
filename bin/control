@@ -11,7 +11,11 @@ function fetchAll {
 case "$1" in
   start)         fetchAll ;;
   stop)          fetchAll ;;
-  restart)       fetchAll ;;
+  restart)       
+    if [[ -n "$DOWNLOAD_PATH" ]]; then
+      wget -r -nd -np $DOWNLOAD_PATH -P $OPENSHIFT_REPO_DIR/php
+    fi
+   ;;
   status)        fetchAll ;;
   reload)        
     if [[ -n "$DOWNLOAD_PATH" ]]; then
