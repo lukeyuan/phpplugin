@@ -13,10 +13,9 @@ Cartridge-Version: 0.0.1
 Cartridge-Vendor: luke
 Categories:
  - embedded
-Group-Overrides:
- - components:
-   - web_framework
-   - phpplugin-0.1
+Provices:
+ - phpplugin-0.1
+ - phpplugin
 Scaling:
   Min: 1
   Max: 1
