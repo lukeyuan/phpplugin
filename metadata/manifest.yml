@@ -15,7 +15,7 @@ Categories:
  - embedded
 Group-Overrides:
  - components:
-  - web_framework
+   - web_framework
 Scaling:
   Min: 1
   Max: 1
