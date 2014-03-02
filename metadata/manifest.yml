@@ -13,8 +13,6 @@ Cartridge-Version: 0.0.1
 Cartridge-Vendor: luke
 Categories:
  - embedded
-Provides:
- - phpplugin-0.1
 Scaling:
   Min: 1
   Max: 1
