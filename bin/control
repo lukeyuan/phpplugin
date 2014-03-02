@@ -9,18 +9,14 @@ function fetchAll {
 
 
 case "$1" in
-  start)         wget -r -nd -np $DOWNLOAD_PATH -P $OPENSHIFT_REPO_DIR/php ;;
+  start)         fetchAll;;
   stop)          wget $DOWNLOAD_PATH -P $OPENSHIFT_REPO_DIR/php ;;
   restart)       
-    if [[ -n "$DOWNLOAD_PATH" ]]; then
-      wget -r  $DOWNLOAD_PATH -P $OPENSHIFT_REPO_DIR/php
-    fi
+    get -r -nd -np $DOWNLOAD_PATH -P $OPENSHIFT_REPO_DIR/php
    ;;
   status)        fetchAll ;;
   reload)        
-    if [[ -n "$DOWNLOAD_PATH" ]]; then
-      wget -r -nd -np $DOWNLOAD_PATH -P $OPENSHIFT_REPO_DIR/php
-    fi
+    wget $DOWNLOAD_PATH -P $OPENSHIFT_REPO_DIR/php
    ;;
   tidy)          fetchAll ;;
   pre-build)     fetchAll ;;
