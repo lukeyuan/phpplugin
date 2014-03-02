@@ -13,6 +13,9 @@ Cartridge-Version: 0.0.1
 Cartridge-Vendor: luke
 Categories:
  - embedded
+Group-Overrides:
+ - components:
+  - web_framework
 Scaling:
   Min: 1
   Max: 1
